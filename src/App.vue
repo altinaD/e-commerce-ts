@@ -1,32 +1,26 @@
 <template>
-  <div>hello world</div>
-  <PropPassing
-    :tasks="tasks"
-    :mainTitle="mainTitle"
-    @changeStatus="handleStatus"
-  />
+  <Header />
+  <main class="main">
+    <router-view v-slot="{Component}">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </main>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import PropPassing from '@/components/ts-components/PropPassing.vue'
-
-interface Task {
-  id: string
-  title: string
-  completed: boolean
-}
-// const mainTitle: string = ref('Learning TypeScript')
-const tasks = ref<Task[]>([
-  { id: '1', title: 'Learn Vue with TypeScript', completed: false },
-  { id: '2', title: 'Build a Vue project', completed: true },
-  { id: '3', title: 'Deploty the project', completed: true },
-])
-
-function handleStatus(id: string) {
-  const task = tasks.value.find(task => task.id === id)
-  if (task) {
-    task.completed = !task.completed
-  }
-}
+import Header from '@/components/header/Header.vue'
 </script>
+
+<style>
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 15px;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+</style>

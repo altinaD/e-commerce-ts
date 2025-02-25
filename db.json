@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "description": "Latest smartphone with amazing features",
+      "price": 699,
+      "category": "electronics",
+      "image": "smartphone.jpg",
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Headphones",
+      "description": "Noise-canceling headphones",
+      "price": 199,
+      "category": "electronics",
+      "image": "headphones.jpg",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Computers",
+      "description": "M2 chipped MacBooks",
+      "price": 1099,
+      "category": "electronics",
+      "image": "computers.jpg",
+      "stock": 30
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "description": "Smartwatch with health tracking features",
+      "price": 249,
+      "category": "electronics",
+      "image": "smartwatch.jpg",
+      "stock": 40
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "description": "High-resolution display tablet",
+      "price": 499,
+      "category": "electronics",
+      "image": "tablet.jpg",
+      "stock": 25
+    },
+    {
+      "id": 6,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with deep bass",
+      "price": 99,
+      "category": "electronics",
+      "image": "bluetooth_speaker.jpg",
+      "stock": 50
+    },
+    {
+      "id": 7,
+      "name": "Gaming Console",
+      "description": "Latest gaming console with 4K support",
+      "price": 399,
+      "category": "electronics",
+      "image": "gaming_console.jpg",
+      "stock": 10
+    },
+    {
+      "id": 8,
+      "name": "Camera",
+      "description": "DSLR camera with high-quality lens",
+      "price": 899,
+      "category": "electronics",
+      "image": "camera.jpg",
+      "stock": 20
+    },
+    {
+      "id": 9,
+      "name": "Electric Kettle",
+      "description": "Fast boiling electric kettle",
+      "price": 45,
+      "category": "home_appliances",
+      "image": "electric_kettle.jpg",
+      "stock": 60
+    },
+    {
+      "id": 10,
+      "name": "Microwave Oven",
+      "description": "Compact microwave with grill function",
+      "price": 150,
+      "category": "home_appliances",
+      "image": "microwave.jpg",
+      "stock": 15
+    },
+    {
+      "id": 11,
+      "name": "Vacuum Cleaner",
+      "description": "Cordless vacuum cleaner with HEPA filter",
+      "price": 250,
+      "category": "home_appliances",
+      "image": "vacuum.jpg",
+      "stock": 18
+    },
+    {
+      "id": 12,
+      "name": "Air Purifier",
+      "description": "Air purifier with HEPA filter",
+      "price": 120,
+      "category": "home_appliances",
+      "image": "air_purifier.jpg",
+      "stock": 22
+    },
+    {
+      "id": 13,
+      "name": "Smart Thermostat",
+      "description": "Smart thermostat for energy efficiency",
+      "price": 180,
+      "category": "home_appliances",
+      "image": "thermostat.jpg",
+      "stock": 12
+    },
+    {
+      "id": 14,
+      "name": "LED TV",
+      "description": "4K Ultra HD LED television",
+      "price": 799,
+      "category": "electronics",
+      "image": "led_tv.jpg",
+      "stock": 8
+    },
+    {
+      "id": 15,
+      "name": "Fitness Tracker",
+      "description": "Wearable fitness tracker with GPS",
+      "price": 129,
+      "category": "electronics",
+      "image": "fitness_tracker.jpg",
+      "stock": 33
+    },
+    {
+      "id": 16,
+      "name": "Lipstick",
+      "description": "Oriflame red lipstick",
+      "price": 129,
+      "category": "cosmetics",
+      "image": "fitness_tracker.jpg",
+      "stock": 33
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "123456"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        { "productId": 1, "quantity": 2 },
+        { "productId": 2, "quantity": 1 }
+      ]
+    }
+  ],
+  "orders": []
+}
